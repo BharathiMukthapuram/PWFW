@@ -1,0 +1,487 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\mukth\\OneDrive\\Desktop\\VtigerFrameworkM15\\node_modules\\@playwright\\test\\cli.js",
+      "test"
+    ],
+    "configFile": "C:\\Users\\mukth\\OneDrive\\Desktop\\VtigerFrameworkM15\\playwright.config.js",
+    "rootDir": "C:/Users/mukth/OneDrive/Desktop/VtigerFrameworkM15/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/mukth/OneDrive/Desktop/VtigerFrameworkM15/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/mukth/OneDrive/Desktop/VtigerFrameworkM15/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json",
+        {
+          "outputFile": "testResults.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.62.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "campaigns\\campaigns.spec.js",
+      "file": "campaigns/campaigns.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "create campaign",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6748,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "[ [ \u001b[32m'campaign1'\u001b[39m ], [ \u001b[32m'campaign2'\u001b[39m ], [ \u001b[32m'campaign3'\u001b[39m ] ]\n"
+                    },
+                    {
+                      "text": "campaign1\n"
+                    },
+                    {
+                      "text": "campaign1 is successfully created.\n"
+                    },
+                    {
+                      "text": "campaign2\n"
+                    },
+                    {
+                      "text": "campaign2 is successfully created.\n"
+                    },
+                    {
+                      "text": "campaign3\n"
+                    },
+                    {
+                      "text": "campaign3 is successfully created.\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-27T02:02:39.948Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f5a1c91266a78778b8a7-a82c8d9d166f6e98cb85",
+          "file": "campaigns/campaigns.spec.js",
+          "line": 174,
+          "column": 5
+        },
+        {
+          "title": "deleteCampaign",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 1033,
+                  "error": {
+                    "message": "Error: locator.check: SyntaxError: Failed to execute 'evaluate' on 'Document': The string '(//input[@type=\"checkbox\")[2]' is not a valid XPath expression.\n    at Object.queryAll (<anonymous>:6296:25)\n    at InjectedScript._queryEngineAll (<anonymous>:6969:49)\n    at InjectedScript.querySelectorAll (<anonymous>:6956:30)\n    at callMatchedElements (eval at evaluate (:311:30), <anonymous>:2:29)\n    at UtilityScript.evaluate (<anonymous>:313:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\nCall log:\n\u001b[2m  - waiting for locator('xpath=(//input[@type=\"checkbox\")[2]')\u001b[22m\n",
+                    "stack": "Error: locator.check: SyntaxError: Failed to execute 'evaluate' on 'Document': The string '(//input[@type=\"checkbox\")[2]' is not a valid XPath expression.\n    at Object.queryAll (<anonymous>:6296:25)\n    at InjectedScript._queryEngineAll (<anonymous>:6969:49)\n    at InjectedScript.querySelectorAll (<anonymous>:6956:30)\n    at callMatchedElements (eval at evaluate (:311:30), <anonymous>:2:29)\n    at UtilityScript.evaluate (<anonymous>:313:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\nCall log:\n\u001b[2m  - waiting for locator('xpath=(//input[@type=\"checkbox\")[2]')\u001b[22m\n\n    at Object.queryAll (<anonymous>:6296:25)\n    at InjectedScript._queryEngineAll (<anonymous>:6969:49)\n    at InjectedScript.querySelectorAll (<anonymous>:6956:30)\n    at callMatchedElements (eval at evaluate (:311:30), <anonymous>:2:29)\n    at UtilityScript.evaluate (<anonymous>:313:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\n    at CamapaignsPage.Delete_campaign (C:\\Users\\mukth\\OneDrive\\Desktop\\VtigerFrameworkM15\\Pages\\Campaigns\\campaignsPage.js:13:54)\n    at C:\\Users\\mukth\\OneDrive\\Desktop\\VtigerFrameworkM15\\tests\\campaigns\\campaigns.spec.js:234:19",
+                    "location": {
+                      "file": "<anonymous>",
+                      "column": 25,
+                      "line": 6296
+                    }
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "<anonymous>",
+                        "column": 25,
+                        "line": 6296
+                      },
+                      "message": "Error: locator.check: SyntaxError: Failed to execute 'evaluate' on 'Document': The string '(//input[@type=\"checkbox\")[2]' is not a valid XPath expression.\n\u001b[2m    at Object.queryAll (<anonymous>:6296:25)\u001b[22m\n\u001b[2m    at InjectedScript._queryEngineAll (<anonymous>:6969:49)\u001b[22m\n\u001b[2m    at InjectedScript.querySelectorAll (<anonymous>:6956:30)\u001b[22m\n\u001b[2m    at callMatchedElements (eval at evaluate (:311:30), <anonymous>:2:29)\u001b[22m\n\u001b[2m    at UtilityScript.evaluate (<anonymous>:313:16)\u001b[22m\n\u001b[2m    at UtilityScript.<anonymous> (<anonymous>:1:44)\u001b[22m\n\u001b[2mCall log:\u001b[22m\n\u001b[2m\u001b[2m  - waiting for locator('xpath=(//input[@type=\"checkbox\")[2]')\u001b[2m\u001b[22m\n\n\u001b[2m    at Object.queryAll (<anonymous>:6296:25)\u001b[22m\n\u001b[2m    at InjectedScript._queryEngineAll (<anonymous>:6969:49)\u001b[22m\n\u001b[2m    at InjectedScript.querySelectorAll (<anonymous>:6956:30)\u001b[22m\n\u001b[2m    at callMatchedElements (eval at evaluate (:311:30), <anonymous>:2:29)\u001b[22m\n\u001b[2m    at UtilityScript.evaluate (<anonymous>:313:16)\u001b[22m\n\u001b[2m    at UtilityScript.<anonymous> (<anonymous>:1:44)\u001b[22m\n\u001b[2m    at CamapaignsPage.Delete_campaign (C:\\Users\\mukth\\OneDrive\\Desktop\\VtigerFrameworkM15\\Pages\\Campaigns\\campaignsPage.js:13:54)\u001b[22m\n\u001b[2m    at C:\\Users\\mukth\\OneDrive\\Desktop\\VtigerFrameworkM15\\tests\\campaigns\\campaigns.spec.js:234:19\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-27T02:02:51.519Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\mukth\\OneDrive\\Desktop\\VtigerFrameworkM15\\test-results\\campaigns-campaigns-deleteCampaign-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\mukth\\OneDrive\\Desktop\\VtigerFrameworkM15\\test-results\\campaigns-campaigns-deleteCampaign-chromium\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "<anonymous>",
+                    "column": 25,
+                    "line": 6296
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "f5a1c91266a78778b8a7-b9c13d59382c614cff33",
+          "file": "campaigns/campaigns.spec.js",
+          "line": 227,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "contacts\\createContacts.spec.js",
+      "file": "contacts/createContacts.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "create product",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 16876,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "[ [ \u001b[32m'Bharathi'\u001b[39m, \u001b[32m'Mukthapuram'\u001b[39m ], [ \u001b[32m'Saranya'\u001b[39m, \u001b[32m'Meduri'\u001b[39m ] ]\n"
+                    },
+                    {
+                      "text": "Bharathi Mukthapuram contact created successfully\n"
+                    },
+                    {
+                      "text": "Saranya Meduri contact created successfully\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-27T02:02:56.673Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f52a1c3a6207dba38896-76a13c4a96f85fe618b9",
+          "file": "contacts/createContacts.spec.js",
+          "line": 101,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "leads\\leads.spec.js",
+      "file": "leads/leads.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "create lead",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 15581,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Bharathi lead created successfully\n"
+                    },
+                    {
+                      "text": "Saranya lead created successfully\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-27T02:03:13.814Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "cbc93ebf2f6d31a0767c-f35c015ccbefa9caeb5c",
+          "file": "leads/leads.spec.js",
+          "line": 108,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "organizations\\createIndustry.spec.js",
+      "file": "organizations/createIndustry.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "create industry",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 17011,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Telecommunications industry created successfully\n"
+                    },
+                    {
+                      "text": "Construction industry created successfully\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-27T02:03:29.422Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "9adb7653958f19c4350a-9df95e96a6248b5d2101",
+          "file": "organizations/createIndustry.spec.js",
+          "line": 120,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "organizations\\createOrganization.spec.js",
+      "file": "organizations/createOrganization.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "create organization",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 14031,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "organization created successfully\n"
+                    },
+                    {
+                      "text": "organization created successfully\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-27T02:03:46.463Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0d692a778700a0d028c1-9e31d1eddb8e350c2b8e",
+          "file": "organizations/createOrganization.spec.js",
+          "line": 50,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "products\\createProduct.spec.js",
+      "file": "products/createProduct.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "create Product",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 12636,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Mango product created successfully\n"
+                    },
+                    {
+                      "text": "Mobile product created successfully\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-27T02:04:00.512Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d10a434aa57238b10d20-0a83a87e8ca70f4223bf",
+          "file": "products/createProduct.spec.js",
+          "line": 89,
+          "column": 5
+        },
+        {
+          "title": "deleteProduct",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 92,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-27T02:04:13.163Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d10a434aa57238b10d20-a3d6e29b196e2401967c",
+          "file": "products/createProduct.spec.js",
+          "line": 132,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-08-27T02:02:39.114Z",
+    "duration": 94252.01000000001,
+    "expected": 7,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

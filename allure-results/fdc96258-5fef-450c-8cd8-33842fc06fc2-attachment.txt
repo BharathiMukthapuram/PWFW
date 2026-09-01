@@ -1,0 +1,7 @@
+[ [ 'campaign1' ], [ 'campaign2' ], [ 'campaign3' ] ]
+campaign1
+campaign1 is successfully created.
+campaign2
+campaign2 is successfully created.
+campaign3
+campaign3 is successfully created.
