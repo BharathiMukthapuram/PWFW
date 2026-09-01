@@ -296,7 +296,7 @@
 // });
 
 
-//! custom fixtures
+//! Login custom fixtures
 import { test} from "../../CustomFixtures/LoginPage.js";
 import path from "node:path";
 let file_path = path.join(__dirname, "../../Data/Excel.xlsx");
