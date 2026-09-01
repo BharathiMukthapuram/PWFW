@@ -85,7 +85,7 @@
 // });
 
 
-//! data driven testing with Excel
+//! data driven testing with Excel (DDT)
 
 
 import { test } from "@playwright/test";
